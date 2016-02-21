@@ -15,7 +15,9 @@ public class MainActivity extends AppCompatActivity {
     }
     public void pulsadoBoton1(View view){
         Log.d("prueba", "Pulsado boton 1");
-        //Intent intencion1 = new Intent(this, Main2Activity.class);
+        Intent intencion1 = new Intent(this, Activity2.class);
+        //Log.d("prueba","pasa por encima del intent");
+        super.startActivityForResult(intencion1,1);
     }//pulsadoBoton1
     public void pulsadoBoton2(View view){
         Log.d("prueba", "Pulsado boton 2");

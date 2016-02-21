@@ -37,6 +37,7 @@
         android:layout_below="@+id/textSumando2"
         android:layout_alignLeft="@+id/textSumando2"
         android:layout_alignStart="@+id/textSumando2"
-        android:layout_marginTop="115dp" />
+        android:layout_marginTop="115dp"
+        android:onClick="pulsadoBotonSumar"/>
 
 </RelativeLayout>
