@@ -10,6 +10,7 @@
     tools:context="com.upv.luissoyyo.tarea3.MainActivity">
 
     <Button
+        android:onClick="pulsadoBoton1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ir 1"
@@ -19,6 +20,7 @@
         android:layout_marginTop="98dp" />
 
     <Button
+        android:onClick="pulsadoBoton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ir 2"
