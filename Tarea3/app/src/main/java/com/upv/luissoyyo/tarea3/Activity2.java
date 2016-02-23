@@ -1,5 +1,6 @@
 package com.upv.luissoyyo.tarea3;
 
+import android.content.Intent;
 import android.os.Debug;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -38,6 +39,14 @@ public class Activity2 extends AppCompatActivity {
         //hacemos la suma
         suma=sumando1+sumando2;
         Log.d("prueba","El resultado de la suma es "+suma);
+
+        //creamos el intent de respuesta
+        Intent resultado = new Intent();
+        //disponemos la información que vamos a pasarle a MainActivity
+        resultado.putExtra("SumaHecha",suma);
+        //convertimos esta intencion en el resultado final de la actividad
+        setResult(RESULT_OK,resultado);
+        finish();//acabamos la actividad
     }//pulsadoBotonSumar
 
 }
