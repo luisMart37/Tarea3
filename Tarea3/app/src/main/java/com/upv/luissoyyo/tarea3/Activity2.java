@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class Activity2 extends AppCompatActivity {
+
     private TextView textSumando1, textSumando2;
     private int sumando1, sumando2, suma;
     private String stringSumando1, stringSumando2;

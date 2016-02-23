@@ -30,14 +30,23 @@ public class MainActivity extends AppCompatActivity {
         super.startActivityForResult(intencion1, 1);
     }//pulsadoBoton1
 
+    public void pulsadoBoton2(View view){
+        Log.d("prueba", "Pulsado boton 2");
+        //creamos la intencion 2 que irá a Activity2 de forma implicita
+        Intent intencion2 = new Intent("luis.ACTIVITY2");
+        //ejecutamos intencion 2 y será reconocida con el índice 2
+        this.startActivityForResult(intencion2,2);
+    }//pulsadoBoton2
+
     protected void onActivityResult(int codigoLlamada,int codigoResultado,Intent intentRespuesta){
 
         if(codigoLlamada==1) {//si la actividad que ha terminado es la 1 (codigo de la llamada)
             int mostraremos = intentRespuesta.getExtras().getInt("SumaHecha");
             this.textResultado.setText("El resultado es: "+mostraremos);
         }
+        if(codigoLlamada==2) {//si la actividad que ha terminado es la 2 (codigo de la llamada)
+            int mostraremos = intentRespuesta.getExtras().getInt("SumaHecha");
+            this.textResultado.setText("El resultado es: "+mostraremos);
+        }
     }//onActivityResult
-    public void pulsadoBoton2(View view){
-        Log.d("prueba", "Pulsado boton 2");
-    }//pulsadoBoton2
 }
